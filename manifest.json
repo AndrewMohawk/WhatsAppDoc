@@ -1,0 +1,25 @@
+{
+    "name": "Whatsapp Doc",
+    "version": "1.0",
+    "description": "Prevent Whatsapp temporarily from removing messages",
+    "content_scripts": [{
+        "js": ["inject.js"],
+        "matches": ["https://web.whatsapp.com/*"]
+    }],
+    "web_accessible_resources": ["content.js"],
+    "page_action": {
+        "default_icon": {
+            "16": "images/icon.png",
+            "32": "images/icon.png",
+            "48": "images/icon.png",
+            "128": "images/icon.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "manifest_version": 2
+}
